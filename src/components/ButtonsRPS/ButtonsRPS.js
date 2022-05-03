@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useContext } from "react";
 import { ThreeWayContext } from "../../context";
-import { elements } from "../.";
+import { elements, BoxButton } from "../.";
 
 const ButtonsRPS = () => {
   const weapons = ['rock', 'paper', 'scissors'];
@@ -13,23 +13,15 @@ const ButtonsRPS = () => {
   }
 
   const handleClick = (event) => {
-    //event.preventDefault();
-
-    //console.log(event.target.name);
-    // setState(event.target.name);
-
-    //console.log(getComputerChoice());
     setUserChoice(event.target.name);
     setCompChoice(getComputerChoice());
   };
   return (
     <Fragment>
       <div style={{ display: "flex", marginTop: "150px", marginBottom: "20px" }}>
-        <div
-          style={{ width: "200px", height: "200px" }}
-          id="rock"
-          onClick={handleClick}
-        >
+        <BoxButton 
+        id="rock"
+        onClick={handleClick}>
           <img
             src={elements.rock}
             style={{ width: "200px" }}
@@ -39,9 +31,8 @@ const ButtonsRPS = () => {
             onMouseOut={(e) => (e.currentTarget.src = `${elements.rock}`)}
           />
           ROCK
-        </div>
-        <div
-          style={{ width: "200px", height: "200px" }}
+        </BoxButton>
+        <BoxButton
           id="paper"
           onClick={handleClick}
         >
@@ -54,9 +45,8 @@ const ButtonsRPS = () => {
             onMouseOut={(e) => (e.currentTarget.src = `${elements.paper}`)}
           />
           PAPER
-        </div>
-        <div
-          style={{ width: "200px", height: "200px" }}
+        </BoxButton>
+        <BoxButton 
           id="scissors"
           onClick={handleClick}
         >
@@ -69,7 +59,9 @@ const ButtonsRPS = () => {
             onMouseOut={(e) => (e.currentTarget.src = `${elements.scissors}`)}
           />
           SCISSORS
-        </div>
+        </BoxButton>
+        
+
       </div>
     </Fragment>
   );

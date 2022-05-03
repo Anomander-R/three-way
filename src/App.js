@@ -1,13 +1,16 @@
-import './App.css';
-import {Main} from './components'
+import { Fragment } from 'react';
+import {Main, Container, GlobalStyle, OuterContainer} from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Main/>
-      </header>
-    </div>
+        <Fragment>
+          <GlobalStyle/>
+          <OuterContainer>
+            <Container>
+              <Main/>
+            </Container>
+          </OuterContainer>
+        </Fragment>
   );
 }
 

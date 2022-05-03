@@ -1,4 +1,5 @@
 import React, {Fragment, useState} from 'react';
+import {StyledButton} from '../.'
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
@@ -21,25 +22,16 @@ const Rules = () => {
     setModalIsOpen(true);
   }
 
-  // function afterOpenModal() {
-  //   // references are now sync'd and can be accessed.
-  //   subtitle.style.color = '#f00';
-  // }
-
   function closeModal() {
     setModalIsOpen(false);
   }
-
-
-
-
   return (
       <Fragment>
-      <button onClick={openModal}>Rules</button>
+        <StyledButton onClick={openModal} style={{background: '#fff', opacity: 0.5, color: '#282c34'}}>Rules</StyledButton>
+      {/* <button onClick={openModal}>Rules</button> */}
   
         <Modal
           isOpen={modalIsOpen}
-          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Rules Modal"

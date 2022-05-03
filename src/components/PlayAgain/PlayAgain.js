@@ -1,10 +1,11 @@
 import React, {useContext} from 'react'
+import {StyledButton} from '../.'
 import { ThreeWayContext } from '../../context'
 
 const PlayAgain = () => {
   const {nextStep} = useContext(ThreeWayContext);
   return (
-    <button onClick={()=>nextStep()}>PlayAgain</button>
+    <StyledButton onClick={()=>nextStep()}>Play Again</StyledButton>
   )
 }
 
