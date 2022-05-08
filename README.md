@@ -2,7 +2,7 @@
 
 Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V).
 
-![28RPS_app](https://user-images.githubusercontent.com/90348779/166473984-8b19b008-661d-438d-b516-af08c21e7c4e.png)
+![28RPS_app1](https://user-images.githubusercontent.com/90348779/167320367-5f398d1e-8ce3-4f4e-bf93-aa0151391af3.png)
 
 ## Product Perspective
 
